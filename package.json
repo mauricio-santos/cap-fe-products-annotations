@@ -12,11 +12,25 @@
     "@sap/cds-dk": "^9"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "start-dev": "cds-serve --profile dev",
+    "start-prod": "cds-serve --profile production",
+    "build": "cds build/all --production"
   },
   "private": true,
   "cds": {
     "requires": {
+      "[dev]": {
+        "db": {
+          "kind": "sqlite",
+          "model": [
+            "db/schema"
+          ]
+        },
+        "auth": {
+          "kind": "dummy"
+        }
+      },
       "[production]": {
         "auth": "xsuaa"
       }

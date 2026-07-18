@@ -1,0 +1,28 @@
+{
+  "generationParameters": {
+    "generationDate": "Sat Jul 18 2026 14:24:38 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "Local CAP",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/odata/v4/products-srv/",
+    "appName": "products-flexible-programming-model",
+    "appTitle": "Products FPM",
+    "appDescription": "Products Flexible Programming Model",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.150.0",
+    "enableEslint": true,
+    "enableTypeScript": true,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.28.0",
+    "template": "Custom Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "ProductsSet"
+      }
+    ],
+    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/productsflexibleprogrammingmodel/index.html"
+  }
+}

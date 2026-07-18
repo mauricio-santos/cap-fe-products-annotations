@@ -43,6 +43,10 @@ modules:
       - productsxmlannotations.zip
       name: productsxmlannotations
       target-path: resources/
+    - artifacts:
+      - productsflexibleprogrammingmodel.zip
+      name: productsflexibleprogrammingmodel
+      target-path: resources/
 - name: productscapcds
   type: html5
   path: app/products-cap-cds
@@ -56,6 +60,16 @@ modules:
 - name: productsxmlannotations
   type: html5
   path: app/products-xml-annotations
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: productsflexibleprogrammingmodel
+  type: html5
+  path: app/products-flexible-programming-model
   build-parameters:
     build-result: dist
     builder: custom

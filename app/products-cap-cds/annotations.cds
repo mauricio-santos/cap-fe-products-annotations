@@ -47,4 +47,36 @@ annotate service.ProductsSet with @(
             Value: price
         }
     ],
+
+    /* ------------- OBJECT PAGE -------------  */
+    /* ############# FieldGroup ############# */
+    UI.FieldGroup #ProductDetails : {
+        $Type: 'UI.FieldGroupType',
+        Data: [
+            {
+                $Type: 'UI.DataField',
+                Value: product
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: productName
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: description
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: price
+            }
+        ]
+    },
+    /* ############# Facets ############# */
+    UI.Facets: [
+        {
+            $Type: 'UI.ReferenceFacet',
+            Label: 'Product Details',
+            Target: '@UI.FieldGroup#ProductDetails'
+        }
+    ]
 );

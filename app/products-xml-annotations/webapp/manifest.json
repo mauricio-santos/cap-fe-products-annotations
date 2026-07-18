@@ -20,8 +20,17 @@
         "uri": "/odata/v4/products-srv/",
         "type": "OData",
         "settings": {
-          "annotations": [],
+          "annotations": [
+            "annotations-products"
+          ],
           "odataVersion": "4.0"
+        }
+      },
+      "annotations-products": {
+        "type": "ODataAnnotation",
+        "uri": "annotations/annotation-products.xml",
+        "settings": {
+          "localUri": "annotations/annotation-products.xml"
         }
       }
     }

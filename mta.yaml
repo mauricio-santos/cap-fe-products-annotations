@@ -39,9 +39,23 @@ modules:
       - productscapcds.zip
       name: productscapcds
       target-path: resources/
+    - artifacts:
+      - productsxmlannotations.zip
+      name: productsxmlannotations
+      target-path: resources/
 - name: productscapcds
   type: html5
   path: app/products-cap-cds
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: productsxmlannotations
+  type: html5
+  path: app/products-xml-annotations
   build-parameters:
     build-result: dist
     builder: custom

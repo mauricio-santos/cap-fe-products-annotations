@@ -21,7 +21,8 @@
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
     "watch-products-cap-cds": "cds watch --open productscapcds/index.html?sap-ui-xx-viewCache=false --livereload false",
     "undeploy": "cf undeploy sap-cap-fe --delete-services --delete-service-keys --delete-service-brokers",
-    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-products-xml-annotations": "cds watch --open productsxmlannotations/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "cds": {
@@ -46,6 +47,7 @@
     "app/*"
   ],
   "sapux": [
-    "app/products-cap-cds"
+    "app/products-cap-cds",
+    "app/products-xml-annotations"
   ]
 }

@@ -69,7 +69,8 @@
         "settings": {
           "operationMode": "Server",
           "autoExpandSelect": true,
-          "earlyRequests": true
+          "earlyRequests": true,
+          "ignoreAnnotationsFromMetadata": true
         }
       },
       "@i18n": {

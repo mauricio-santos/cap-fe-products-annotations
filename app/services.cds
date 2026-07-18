@@ -1,4 +1,3 @@
 
-using from './products-cap-cds/annotations';
+using from './products-cap-cds/annotations'; //using for CAP CDS annotations
 
-using from './products-xml-annotations/annotations';
